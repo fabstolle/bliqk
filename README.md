@@ -70,3 +70,5 @@ bliqk/
 ---
 
 Built with Next.js 14, TypeScript, Prisma, and Anthropic Claude.
+
+
