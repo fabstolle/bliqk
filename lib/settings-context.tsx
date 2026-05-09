@@ -269,9 +269,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
   const setLanguage = (v: Language) => { setL(v); save({ language: v }); };
 
   return (
-    <Ctx.Provider value={{ theme, setTheme, fontSize, setFontSize, contrast, setContrast, language, setLanguage, t: THEMES[theme], fs: FONT_SIZES[fontSize], s: STRINGS[language] }}>
-      {children}
-    </Ctx.Provider>
+   <Ctx.Provider value={{ theme, setTheme, fontSize, setFontSize, contrast, setContrast, language, setLanguage, t: THEMES[theme], fs: FONT_SIZES[fontSize], s: STRINGS[language] as typeof STRINGS["en"] }}>
   );
 }
 
